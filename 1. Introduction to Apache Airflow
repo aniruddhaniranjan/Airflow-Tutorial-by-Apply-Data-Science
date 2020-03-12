@@ -1,0 +1,10 @@
+Framework to programmatically setup, schedule and monitor data pipelines and workflows. Workflow is a sequence of tasks scheduled or triggered by an event. For handling big data pipelines
+A naive workflow is an ETL cron job. Issues with naive approach are as follows:
+1. Failures - what action to take, is it a retry (how many times and with what frequency)
+2. Monitoring - how to report the success or failure status, how long do the tasks run, what if the task run for too long (timeouts)
+3. Dependencies - a. Data dependency - upstream data is missing, so we don't want downstream dependency to run. b. Execution dependency - in some cases, downstream jobs must start only after upstream jobs are finished executing (if the first job takes too long, we don't want the latter job to start execution)
+4. Scalability - when there are more and more jobs, how are they scheduled - is there a centralized scheduler (no such in naive system)
+5. Deployment - how to deploy new changes that constantly happen
+6. Process Historic Data - In big data systems, we must backfill or rerun jobs on historical data to generate reports (to view trends for 6 months/12 months/etc)
+
+#Continue from 4 min mark: https://www.youtube.com/watch?v=AHMm1wfGuHE&list=PLYizQ5FvN6pvIOcOd6dFZu3lQqc6zBGp2&index=2&t=0s
