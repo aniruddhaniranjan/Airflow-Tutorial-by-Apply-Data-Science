@@ -7,4 +7,4 @@ A naive workflow is an ETL cron job. Issues with naive approach are as follows:
 5. Deployment - how to deploy new changes that constantly happen
 6. Process Historic Data - In big data systems, we must backfill or rerun jobs on historical data to generate reports (to view trends for 6 months/12 months/etc)
 
-#Continue from 4 min mark: https://www.youtube.com/watch?v=AHMm1wfGuHE&list=PLYizQ5FvN6pvIOcOd6dFZu3lQqc6zBGp2&index=2&t=0s
+# Continue from 4 min mark: https://www.youtube.com/watch?v=AHMm1wfGuHE&list=PLYizQ5FvN6pvIOcOd6dFZu3lQqc6zBGp2&index=2&t=0s
